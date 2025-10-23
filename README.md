@@ -1,4 +1,4 @@
-updates: having issues with saving changes made to the Program.cs file
+updates: manually changes Programs.cs file, still figuring out why none of my changes save in GitHub Desktop
 
 to practice and demonstrate C# features: indexers, delegates, events, and operator overloading
 this is a console-based simulation that mimics managing a list of products where you should be able to:
