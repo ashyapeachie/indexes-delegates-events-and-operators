@@ -5,4 +5,4 @@ Description: class that represents a product with a code and description and sup
     equality comparisons using == and != operators
  */
 
-using System;
+// using System;
