@@ -16,7 +16,7 @@ class ProductList {
     public delegate void ListChangedHandler();
     public event ListChangedHandler Changes;
 
-    // public void Add(Product p)
+    public void Add(Product p)
 
     // public void Remove
 
