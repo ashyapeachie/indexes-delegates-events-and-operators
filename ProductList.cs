@@ -12,6 +12,16 @@ using System.Collections.Generic;
 class ProductList {
     private List<Product> products = new();
 
-    // public
-    // public event
+    /* defining a simple delegate and event */
+    public delegate void ListChangedHandler();
+    public event ListChangedHandler Changes;
+
+    // public void Add(Product p)
+
+    // public void Remove
+
+    /* operator overloads */
+    // public static ProductList operator +(ProductList list, Product p)
+
+    /* indexer */
 }
