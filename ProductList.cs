@@ -28,4 +28,7 @@ class ProductList {
     // public static ProductList operator -(ProductList list, Product p)
 
     /* indexer */
+    // public Product this[] {}
+
+    // public override string ToString() {}
 }
