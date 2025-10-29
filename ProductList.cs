@@ -21,11 +21,21 @@ class ProductList {
         Changes?.Invoke();
     }
 
-    // public void Remove(Product p)
+    public void Remove(Product p) {
+        products.Remove(p);
+        Changes?.Invoke();
+    }
 
     /* operator overloads */
-    // public static ProductList operator +(ProductList list, Product p)
-    // public static ProductList operator -(ProductList list, Product p)
+    public static ProductList operator +(ProductList list, Product p) {
+        list.Add(p);
+        return list;
+    }
+    
+    public static ProductList operator -(ProductList list, Product p) {
+        list.Remove(p);
+        return list;
+    }
 
     /* indexer */
     // public Product this[] {}
