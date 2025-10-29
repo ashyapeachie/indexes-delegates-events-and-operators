@@ -16,12 +16,16 @@ class ProductList {
     public delegate void ListChangedHandler();
     public event ListChangedHandler Changes;
 
-    public void Add(Product p)
+    public void Add(Product p) {
+        products.Add(p);
+        Changes?.Invoke();
+    }
 
-    // public void Remove
+    // public void Remove(Product p)
 
     /* operator overloads */
     // public static ProductList operator +(ProductList list, Product p)
+    // public static ProductList operator -(ProductList list, Product p)
 
     /* indexer */
 }
